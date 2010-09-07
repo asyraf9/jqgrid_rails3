@@ -1,0 +1,34 @@
+/* modifiable codes - colors and filenames */
+#header h1 a {color: #fff;}
+
+/* Core modifications - do not touch these unless you know what you are doing! */
+#header_container {position: relative; height: 150px;}
+#header img {float: left; margin-top: 10px;}
+#header h1 {float:left; margin-left:20px; padding-top:20px;}
+#header h1 a {text-decoration: none;}
+#user-navigation {position: absolute; top: 0px; right: 0px;}
+#user-navigation ul {padding: 0px; margin: 0px 5px 5px 5px;}
+#user-navigation ul li {display: inline; padding: 5px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+#main-navigation {margin-bottom: 10px; position: absolute; bottom: 0px; width: 100%; clear: both;}
+#main-navigation ul {padding: 0px; margin: 7px 5px 3px;}
+#main-navigation ul li {display: inline; padding: 6px 10px 5px; -moz-border-radius:5px 5px 0 0; -webkit-border-radius: 5px 5px 0 0; border-bottom: none;}
+#main-navigation ul li a {text-decoration: none; font-weight: normal;}
+
+#ft-content {margin: 20px 0px 0px; padding: 20px; border-bottom: none;}
+
+/* Generic classes */
+
+/* Apply to the body element to control background properties */
+.repeat-x {background-repeat: repeat-x;}
+.repeat-y {background-repeat: repeat-y;}
+.repeat {background-repeat: repeat;}
+.no-repeat {background-repeat: no-repeat;}
+.bg-center-top {background-position: center top;}
+body {background: url("../images/background.jpg");}
+
+/* Apply to widget contents and headings */
+.ui-widget-header h2, .ui-widget-header h3 {margin: 5px 10px 10px;}
+.ui-widget-content {padding: 0.2em;}
+.ui-widget .content-title {margin-bottom: 15px;}
+.ui-widget .content {padding: 15px 15px 0px 15px;}
+

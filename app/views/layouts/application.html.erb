@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JqgridRails3</title>
+  <%= stylesheet_link_tag 'grid', 'reset', 'typography', 'style', 'smoothness/jquery-ui-1.8.4.custom', 'ui.jqgrid' %>
+  <%= javascript_include_tag 'reset', 'jquery-1.4.2.min', 'jquery-ui-1.8.4.custom.min','jqgrid-i18n/grid.locale-en.js', 'jquery.jqGrid.min' %>
+  <%= csrf_meta_tag %>
+  <script type="text/javascript" charset="utf-8">
+    // <![CDATA[
+    $(document).ready(function() {
+      $(".menu-list li").hover(
+        function(){
+          $(this).addClass("ui-state-hover");
+        },
+        function(){
+          $(this).removeClass("ui-state-hover");
+      })
+    });
+    // ]]>
+  </script>
+</head>
+<body>
+  <!-- begin header -->
+  <div id="header" class="">
+    <div id="header_container" class="container">
+      <%= image_tag 'logo.png' %>
+      <h1><a href="http://pilu.github.com/web-app-theme/index.html">Web App Theme</a></h1>
+      <div id="user-navigation" class="ui-widget ui-state-default ui-corner-bottom">
+        <ul class="menu-list">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a class="logout" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div id="main-navigation" class="ui-widget ui-widget-header ui-corner-all">
+        <ul class="menu-list">
+          <li class=""><a href="#block-text">Main Page</a></li>
+          <li class="ui-state-active"><a href="#block-text">Active</a></li>
+          <li class=""><a href="#block-login">Login</a></li>
+          <li class=""><a href="#block-signup">Signup</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end header -->
+  <!-- begin body -->
+  <div id="main-body" class="container">
+    <%= yield %>
+  </div>
+  <!-- end body -->
+  <!-- begin footer -->
+  <div id="footer" class="container">
+    <div class="span-24 last">
+      <div id="ft-content" class="ui-state-default ui-corner-top">
+        Copyright CS8 2010. All rights reserved
+      </div>
+    </div>
+  </div>
+  <!-- end footer -->
+</body>
+</html>
+
