@@ -1,8 +1,6 @@
 <h1>Listing users</h1>
 
-<%= jqgrid2(User, opt={:path => users_path, :fields => "name,staff_no,description"}) %><br/>
+<%= jqgrid2(User, opt={:path => users_path, :fields=>"staff_no,name,description"}) %><br/>
 
 <br />
-
-<%= link_to 'New User', new_user_path %>
 

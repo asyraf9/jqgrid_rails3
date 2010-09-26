@@ -32,4 +32,5 @@ gem "haml", ">=3.0.0"
 gem "compass", ">= 0.10.0"
 gem "compass-susy-plugin"
 #gem 'formtastic', :git => "git://github.com/justinfrench/formtastic.git", :branch => "rails3"
+gem "will_paginate", "~> 3.0.pre2"
 

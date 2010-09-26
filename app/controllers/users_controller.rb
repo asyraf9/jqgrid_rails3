@@ -2,12 +2,12 @@ class UsersController < ApplicationController
   # GET /users
   # GET /users.xml
   def index
-    @users = User.all
+    @users = User.order("id ASC")
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @users }
-      format.json { render :json => to_jqgrid_json(User)}
+      format.json { render :json => to_jqgrid_json(@users)}
     end
   end
 
@@ -80,14 +80,6 @@ class UsersController < ApplicationController
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
     end
-  end
-
-  def filter_bar_conditions(fields,params)
-    conditions = ""
-    fields.each do |field|
-      conditions << "#{field} LIKE '#{params[field]}%' AND " unless params[field].nil?
-    end
-    conditions.chomp("AND ")
   end
 end
 

@@ -1,0 +1,21 @@
+jQuery.extend(jQuery.jgrid.defaults, {
+      datatype:'json',
+      jsonReader:{:repeatItems => false},
+      rowNum:1,
+      rowList: [1,25,50,100],
+      sort_name:'',
+      sort_order:'',
+      height:150,
+      autowidth:false,
+      viewrecords:true,
+      rownumbers:false,
+      scrollrows:true,
+      gridview:false,
+      search:true,
+      add:false,
+      edit:false,
+      delete:false,
+      inline_edit:false,
+      error_handler:'',
+    });
+
