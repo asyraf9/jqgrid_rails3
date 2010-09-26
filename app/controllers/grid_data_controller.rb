@@ -37,7 +37,7 @@ class GridDataController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(users_url) }
       format.xml  { head :ok }
-      format.json { head:ok}
+      format.json { head:ok }
     end
   end
 
